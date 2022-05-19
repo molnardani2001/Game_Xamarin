@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
+             x:Class="Game_Xamarin.View.GamePage"
+             Title="Maci Laci">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="MainButtonStyle" TargetType="Button">
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="BackgroundColor" Value="LightGray"/>
+                <Setter Property="CornerRadius" Value="7"/>
+                <Setter Property="Margin" Value="5"/>
+                <Setter Property="HeightRequest" Value="50"/>
+            </Style>
+
+            <Style x:Key="FieldStyle" TargetType="Rectangle">
+                <Setter Property="WidthRequest" Value="10"/>
+                <Setter Property="HeightRequest" Value="10"/>
+            </Style>
+
+            <Style x:Key="MainLabelStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="Medium" />
+                <Setter Property="Margin" Value="1"/>
+            </Style>
+
+            <Style x:Key="ControlButton" TargetType="Button">
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="HeightRequest" Value="50"/>
+                <Setter Property="Margin" Value="5" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackLayout Orientation="Horizontal" Grid.Row="0">
+            <Button Text="Könnyű" Command="{Binding EasyNewGameCommand}" Style="{StaticResource MainButtonStyle}"/>
+            <Button Text="Közepes" Command="{Binding MediumNewGameCommand}" Style="{StaticResource MainButtonStyle}"/>
+            <Button Text="Nehéz" Command="{Binding HardNewGameCommand}" Style="{StaticResource MainButtonStyle}"/>
+            <Button Text="{Binding ContinueText}" Command="{Binding PauseGameCommand}" Style="{StaticResource MainButtonStyle}" IsEnabled="{Binding ContinueEnabled}"/>
+        </StackLayout>
+        
+        <controls:FlowListView Grid.Row="1" FlowColumnCount="{Binding Width}" FlowItemsSource="{Binding Fields}" SeparatorVisibility="None">
+            <controls:FlowListView.FlowColumnTemplate>
+                <DataTemplate>
+                    <Rectangle BackgroundColor ="{Binding Color}" Style="{StaticResource FieldStyle}"/>
+                </DataTemplate>
+            </controls:FlowListView.FlowColumnTemplate>
+        </controls:FlowListView>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Start" Grid.Row="2">
+            <Label Text="Kosarak száma: " Style="{StaticResource MainLabelStyle}" />
+            <Label Text="{Binding BasketCount}" Style="{StaticResource MainLabelStyle}"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="End" Grid.Row="2">
+            <Label Text="Játékidő: " Style="{StaticResource MainLabelStyle}" />
+            <Label Text="{Binding GameTime}" Style="{StaticResource MainLabelStyle}"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" Grid.Row="3">
+            <Button Text="Balra" Command="{Binding StepLeftCommand}" Style="{StaticResource ControlButton}" IsEnabled="{Binding ContinueEnabled}"/>
+            <Button Text="Fel" Command="{Binding StepUpCommand}" Style="{StaticResource ControlButton}" IsEnabled="{Binding ContinueEnabled}"/>
+            <Button Text="Le" Command="{Binding StepDownCommand}" Style="{StaticResource ControlButton}" IsEnabled="{Binding ContinueEnabled}"/>
+            <Button Text="Jobbra" Command="{Binding StepRightCommand}" Style="{StaticResource ControlButton}" IsEnabled="{Binding ContinueEnabled}"/>
+        </StackLayout>
+        
+    </Grid>
+</ContentPage>

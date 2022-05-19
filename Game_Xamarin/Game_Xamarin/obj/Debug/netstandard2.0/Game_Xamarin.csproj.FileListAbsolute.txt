@@ -1,0 +1,15 @@
+C:\Users\Dani\source\repos\Game_Xamarin\Game_Xamarin\Game_Xamarin\obj\Debug\netstandard2.0\Game_Xamarin.csproj.AssemblyReference.cache
+C:\Users\Dani\source\repos\Game_Xamarin\Game_Xamarin\Game_Xamarin\obj\Debug\netstandard2.0\Game_Xamarin.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dani\source\repos\Game_Xamarin\Game_Xamarin\Game_Xamarin\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Dani\source\repos\Game_Xamarin\Game_Xamarin\Game_Xamarin\obj\Debug\netstandard2.0\View\GamePage.xaml.g.cs
+C:\Users\Dani\source\repos\Game_Xamarin\Game_Xamarin\Game_Xamarin\obj\Debug\netstandard2.0\Game_Xamarin.AssemblyInfoInputs.cache
+C:\Users\Dani\source\repos\Game_Xamarin\Game_Xamarin\Game_Xamarin\obj\Debug\netstandard2.0\Game_Xamarin.AssemblyInfo.cs
+C:\Users\Dani\source\repos\Game_Xamarin\Game_Xamarin\Game_Xamarin\obj\Debug\netstandard2.0\Game_Xamarin.csproj.CoreCompileInputs.cache
+C:\Users\Dani\source\repos\Game_Xamarin\Game_Xamarin\Game_Xamarin\bin\Debug\netstandard2.0\Game_Xamarin.deps.json
+C:\Users\Dani\source\repos\Game_Xamarin\Game_Xamarin\Game_Xamarin\bin\Debug\netstandard2.0\Game_Xamarin.dll
+C:\Users\Dani\source\repos\Game_Xamarin\Game_Xamarin\Game_Xamarin\bin\Debug\netstandard2.0\ref\Game_Xamarin.dll
+C:\Users\Dani\source\repos\Game_Xamarin\Game_Xamarin\Game_Xamarin\bin\Debug\netstandard2.0\Game_Xamarin.pdb
+C:\Users\Dani\source\repos\Game_Xamarin\Game_Xamarin\Game_Xamarin\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Dani\source\repos\Game_Xamarin\Game_Xamarin\Game_Xamarin\obj\Debug\netstandard2.0\Game_Xamarin.dll
+C:\Users\Dani\source\repos\Game_Xamarin\Game_Xamarin\Game_Xamarin\obj\Debug\netstandard2.0\ref\Game_Xamarin.dll
+C:\Users\Dani\source\repos\Game_Xamarin\Game_Xamarin\Game_Xamarin\obj\Debug\netstandard2.0\Game_Xamarin.pdb
